@@ -67,12 +67,12 @@ h1{
 }
 
 h2{
-font-size: 23px;
+font-size: 25px;
 margin:  1rem 0;
 }
 
 h4{
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px 0;
 }
 
@@ -313,7 +313,7 @@ legend{
 
 .flexed-articles{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 2rem;
     flex-wrap: wrap;
 }
@@ -322,6 +322,11 @@ legend{
     min-width: 200px;
     max-width: 692px;
     flex-grow: 1;
+    transition-duration: 1.5s;
+
+}
+.article-card:hover{
+    transform: scale(1.1);
 }
 
 
@@ -382,7 +387,7 @@ legend{
         text-align: start;
         gap: 2rem;
     }
-    
+
 
 @media screen and (min-width: 800px) {
     #background-img{

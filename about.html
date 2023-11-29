@@ -7,6 +7,14 @@
     <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
     <title>About</title>
 
+    <meta name="description" content="about side for the company">
+    <meta name="keywords" content="Services, clients,contact us, about, map">
+    <!--opengraph metadata-->
+    <meta property="og:title" content="About our company">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="ressurser/headerbilde">
+    <!--på grunn av at siden ikke har en url setter jeg bare en placeholder url her-->
+    <meta property="og:url" content="https://about">
 </head>
 <body>
     <header>
@@ -29,13 +37,13 @@
             <!--<img src="ressurser/placeholder.png" alt="pcaceholder bakgrunn">-->
             <article id="overlaying-header">
                 <p>company name</p>
-                <h4>About Our Company</H4>
+                <h4 tabindex="0">About Our Company</H4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non ipsum odio. Morbi et venenatis leo, vel viverra diam. Praesent euismod quis metus id dignissim. Curabitur aliquet, mauris suscipit pharetra tincidunt, ex mi congue leo, vitae viverra orci augue sit amet dolor. Sed eu dapibus lorem. Quisque id justo nisi. Aenean bibendum, tellus id scelerisque porta, diam sem euismod turpis, at condimentum orci arcu in erat. Aenean convallis</p>
                 <a class="yellow" href="#contact">Get in touch with us</a>
             </article>
         </section>
-        <section class="services">
-            <H2>Our services</H2>
+        <section id="services">
+            <H2 tabindex="0">Our services</H2>
             <ul class="service-list">
                 <li><article class="service">
                     <i class="fa-solid fa-users service-btn"></i>
@@ -60,7 +68,7 @@
             </ul>
         </section>
         <section id="clients">
-            <H2>Some of our clients</H2>
+            <H2 tabindex="0">Some of our clients</H2>
             <ul>
                 <li><img class="client-logo" src="ressurser/logo1.png" alt="logo til siden" ></li> 
                 <li><img class="client-logo" src="ressurser/logo2.png" alt="logo til siden" ></li>
@@ -69,22 +77,22 @@
         </section>
 
     <section id="contact-us">
-        <h2 id="contact">Contact us</h2>
+        <h2 id="contact" tabindex="0">Contact us</h2>
         <div id="flex-contact">
             <fieldset>
                 <legend>Send us a message</legend>
                 <form>
                     <p>
                         <label for="name">Name</label><br>
-                        <input type="text" id="name" name="name" placeholder="Ola Nordmann..">
+                        <input aria-label="name" type="text" id="name" name="name" placeholder="Ola Nordmann..">
                     </p>
                     <p>
                         <label for="subject">Subject</label><br>
-                        <input type="text" id="subject" name="subject" placeholder="Branding">
+                        <input aria-label="subjekt" type="text" id="subject" name="subject" placeholder="Branding">
                     </p>
                     <p>
                         <label for="message">Message</label><br>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea aria-label="message" name="message" id="message" cols="30" rows="10"></textarea>
                     </p>
                     <!--Her har jeg brukt button istedenfor en a tag som på de andre knappene, fordi her 
                         ville det i realitetet mens sannsynlig blitt brukt js kode eller tilsvarende 
@@ -113,13 +121,6 @@
             </article>
         </div>
     </section>
-    
-    
-    
-    
-    
-    
-    
     
     
     <section id="map-section">

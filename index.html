@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styling.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
-
     <title>Home</title>
+    <meta name="description" content="Home of the website">
+    <meta name="keywords" content="Services, about, newsletter">
+    
+    <!--opengraph metadata-->
+    <meta property="og:title" content="Compeling headline">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="ressurser/headerbilde">
+    <!--på grunn av at siden ikke har en url setter jeg bare en placeholder url her-->
+    <meta property="og:url" content="https://index">
 </head>
 <body>
     <!--  -->
@@ -23,12 +31,13 @@
                 <li><a class="yellow" href="about.html#contact">Contact</a></li>
             </ul>
         </nav>
+        
         <section class="positioned-relative">
             <video class="video-background" autoplay muted>
                 <source src="ressurser/mountains.mp4" type="video/mp4">
             </video>
             <article>
-                <H1>Compeling headline</H1>
+                <H1 tabindex="0">Compeling headline</H1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non ipsum odio. Morbi et venenatis leo, vel viverra diam. Praesent euismod quis metus id dignissim.Aenean bibendum, tellus id scelerisque porta, diam sem euismod turpis, at condimentum orci arcu in erat.</p>
                 <a class="yellow" href="#services">Read more about our services</a>
             </article>
@@ -37,20 +46,24 @@
 
     <main>
         
-        <section id="subheading">
+        <section id="subheading" tabindex="0">
             <h2>Enganging subheading. What can you help your visitors with</H2>
             <p>Quisque id justo nisi. Aenean bibendum, tellus id scelerisque porta, diam sem euismod turpis, at condimentum orci arcu in erat. Morbi interdum vehicula risus, at lacinia leo porttitor at.</p>
         </section>
+        
         <section id="yellow-section">
             <img class="placeholder" src="ressurser/placeholder.png" alt="placeholder bilde">
             <article id="grid-2-col">
-                <h3>About our company</h3>
+                <h3 tabindex="0">About our company</h3>
                 <p>Aenean convallis, sapien eu sollicitudin consectetur, ligula dolor suscipit ligula, nec faucibus augue neque eget ante.</p>
                 <a id="border-button" href="about.html">Read more about us</a>
             </article>
         </section>
         <section id="services">
-            <H2>Our services</H2>
+            <H2 tabindex="0">Our services</H2>
+            <!--Her er ett eksempel på at jeg har lagt til ett element som pynt for å koble flere elementer og kan bruke flex, 
+                det er ikke noe direkte innhold i ul utenom å lage en container, her kunne jeg også ha brukt en div som en container og istendenfor
+                men jeg valgte å se på det som en liste isteden.-->
             <ul class="service-list">
                 <li><article class="service">
                     <i class="fa-solid fa-users service-btn"></i>
@@ -74,7 +87,8 @@
         <section id="newsletter">
             <H2>Sign up for our newsletter</H2>
             <form>
-                <input class="small-input" type="email" placeholder="fferfe@ferf.no"><button class="form-btn">Sign me up</button>
+                <input aria-label="email" class="small-input" type="email" placeholder="fferfe@ferf.no">
+                <button aria-label="sign up" class="form-btn">Sign me up</button>
             </form>
         </section>
 
